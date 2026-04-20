@@ -1,1 +1,1 @@
-https://samhi113.github.io/picross/
+https://samhi113.github.io/picross/solve.html
