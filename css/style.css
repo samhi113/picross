@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap");
+
+html,
+body {
+  background-color: #eee;
+
+  font-family: Gabarito, Arial, Helvetica, sans-serif;
+  font-size: calc(0.8vh + 0.4vw);
+
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-evenly;
+}
+
+* {
+  transition: all 0.05s ease-in-out;
+}
+
+form {
+  width: 40em;
+  padding: 0 5em;
+
+  display: flex;
+  flex-direction: column;
+}
+
+form * {
+  margin-bottom: 1em;
+}
+
+form h2 {
+  font-size: 2.5em;
+  font-weight: 550;
+}
+
+form p {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+form label {
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 0;
+}
+
+table {
+  border: #00000022 1px solid;
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+
+  display: table;
+  table-layout: fixed;
+}
+
+table thead th {
+  vertical-align: bottom;
+
+  width: 5em;
+  height: 10vh;
+
+  font-weight: normal;
+}
+
+table thead th p {
+  margin: 0.25vh 0;
+}
+
+table td.rowHead {
+  height: 5em;
+  width: fit-content;
+  min-width: 6em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+table td.rowHead p {
+  margin: 0 5px;
+}
+
+table *:not(tbody) {
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+table tbody tr,
+table thead {
+  min-width: 200px;
+  width: fit-content;
+  max-width: 80vw;
+
+  min-height: 40px;
+}
+
+table tbody td:not(.rowHead) {
+  min-width: 5em;
+  height: 5em;
+  vertical-align: middle;
+
+  border: #00000022 solid 0.5px;
+}
+
+table tbody tr:hover td,
+.hoverCol {
+  background-color: #00000011;
+}
+
+table tbody td:not(.rowHead):hover {
+  background-color: #00000022;
+}
