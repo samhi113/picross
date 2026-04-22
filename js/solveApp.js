@@ -496,7 +496,7 @@ function checkWin(count) {
     if (count >= trueCount) {
         for (let r = 0; r < cells.length; r++) {
             if (cells[r][0] === true) {
-                document.getElementById(`cell${r}`).style.backgroundColor = "#40b080";
+                document.getElementById(`cell${r}`).classList.add("winCell");
             }
         }
         console.log(`Block ${count}: You win!`)
